@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Svensk IPTV-blogg & guider – Bästa IPTV Sverige-tips 2026 | IPTV Nordic</title>
+  <meta name="description" content="Läs våra guider, tips och jämförelser om IPTV i Sverige. Lär dig allt om IPTV-installation, 4K-streaming och hur du väljer den bästa IPTV-tjänsten 2026." />
+  <meta name="keywords" content="svensk iptv blogg, iptv sverige guide, bästa svenska iptv, bästa iptv 2026, iptv sverige installation, streaming tv sverige, iptv 4k" />
+  <link rel="canonical" href="https://iptvnordica.se/blog.html" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%231d4ed8'/><rect x='4' y='8' width='24' height='14' rx='2.5' fill='white'/><rect x='12' y='24' width='8' height='2' rx='1' fill='white'/><circle cx='24' cy='10' r='2.5' fill='%2325d366'/></svg>" type="image/svg+xml" />
+
+  <meta property="og:title"       content="Svensk IPTV-blogg & guider – Bästa IPTV Sverige 2026" />
+  <meta property="og:description" content="Guider, tips och jämförelser om IPTV i Sverige." />
+  <meta property="og:type"        content="website" />
+  <meta property="og:locale"      content="sv_SE" />
+
+  <link rel="preconnect" href="https://cdn.tailwindcss.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <script>window.tailwind = window.tailwind || {}; window.tailwind.config = { corePlugins: { preflight: false } };</script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- NOTIFICATION BAR -->
+<style>
+  .header { top: 36px !important; }
+  .blog-filters-bar { top: calc(36px + var(--nav-h)) !important; }
+  #notif-bar { animation: nb-in .45s ease both; }
+  @keyframes nb-in { from { opacity: 0; } to { opacity: 1; } }
+</style>
+<div id="notif-bar"
+     class="sticky top-0 z-[250] w-full flex items-center justify-center min-h-[36px] px-10 py-1.5 bg-gradient-to-r from-[#1e3a8a] via-blue-600 to-[#1e3a8a] text-white text-[11px] sm:text-sm font-semibold"
+     role="banner" aria-label="Kampanjmeddelande">
+  <span class="text-center leading-snug">
+    📢&nbsp;<strong class="font-black">ERBJUDANDE:</strong>
+    <span class="hidden sm:inline"> Få <strong class="text-yellow-300 font-black">20% extra rabatt</strong> på ett <strong>IPTV Nordic</strong>-årsabonnemang</span>
+    <span class="sm:hidden"> <strong class="text-yellow-300 font-black">20% rabatt</strong> <strong>IPTV Nordic</strong></span>
+    <strong class="text-yellow-300 font-black animate-pulse"> — Endast idag! ⏳</strong>
+  </span>
+  <button
+    onclick="document.getElementById('notif-bar').style.display='none'; document.querySelector('.header').style.top='0'; var b=document.querySelector('.blog-filters-bar'); if(b) b.style.top='var(--nav-h)';"
+    class="absolute right-3 top-1/2 -translate-y-1/2 text-white/50 hover:text-white text-xl leading-none transition-colors duration-150"
+    aria-label="Stäng meddelande">×</button>
+</div>
+
+<!-- HEADER -->
+<header class="header" id="top">
+  <div class="container header__inner">
+
+    <a href="/" class="logo" aria-label="IPTV Nordic – hem">
+      <svg class="logo__svg" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect width="28" height="28" rx="7" fill="#1d4ed8"/>
+        <rect x="4" y="7" width="20" height="12" rx="2" fill="white"/>
+        <rect x="10" y="21" width="8" height="2" rx="1" fill="white"/>
+        <circle cx="22" cy="9" r="2.5" fill="#25d366"/>
+        <rect x="7" y="10" width="5" height="3.5" rx=".75" fill="#1d4ed8"/>
+        <rect x="14" y="10" width="7" height="1.5" rx=".75" fill="#bfdbfe"/>
+        <rect x="14" y="12.5" width="5" height="1.5" rx=".75" fill="#bfdbfe"/>
+      </svg>
+      IPTV <strong>Nordic</strong>
+    </a>
+
+    <nav class="nav" aria-label="Huvudnavigation">
+      <a href="/" title="Hem">Hem</a>
+      <a href="/#features" title="Funktioner">Funktioner</a>
+      <a href="/pricing.html" title="Priser">Priser</a>
+      <a href="blog.html" title="Blogg" class="nav--active">Blogg</a>
+      <a href="contact.html" title="Kontakt">Kontakt</a>
+    </nav>
+
+    <a
+      href="https://wa.me/17867352904?text=Hej!%20Jag%20vill%20ha%20ett%20gratis%2024-timmarstest."
+      class="btn btn-wa"
+      target="_blank" rel="noopener noreferrer"
+      title="Starta ett gratis IPTV-test via WhatsApp"
+    >
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.534 5.86L0 24l6.335-1.51A11.955 11.955 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.028-1.38l-.36-.214-3.762.897.934-3.668-.235-.376A9.808 9.808 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182c5.43 0 9.818 4.388 9.818 9.818 0 5.43-4.388 9.818-9.818 9.818z"/></svg>
+      Gratis 24h-test
+    </a>
+
+    <button class="hamburger" id="menuBtn" aria-label="Öppna meny" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+  </div>
+
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <a href="/" title="Hem">Hem</a>
+    <a href="/#features">Funktioner</a>
+    <a href="/pricing.html">Priser</a>
+    <a href="blog.html">Blogg</a>
+    <a href="contact.html">Kontakt</a>
+    <a
+      href="https://wa.me/17867352904?text=Hej!%20Jag%20vill%20ha%20ett%20gratis%2024-timmarstest."
+      class="btn btn-wa"
+      target="_blank" rel="noopener noreferrer"
+    >💬 Gratis 24h-test</a>
+  </div>
+</header>
+
+
+<!-- BLOG HERO -->
+<section class="blog-hero" aria-labelledby="blog-h1">
+  <div class="container blog-hero__inner">
+    <p class="section-eyebrow">Tips, guider &amp; nyheter</p>
+    <h1 class="blog-hero__title" id="blog-h1">IPTV-blogg &amp; guider</h1>
+    <p class="blog-hero__sub">Allt du behöver veta om IPTV i Sverige – från installationsguider till jämförelser av de bästa tjänsterna.</p>
+    <div class="blog-hero-stats">
+      <div class="blog-hero-stat">
+        <strong>10</strong>
+        <span>Artiklar</span>
+      </div>
+      <div class="blog-hero-stat__sep"></div>
+      <div class="blog-hero-stat">
+        <strong>5</strong>
+        <span>Kategorier</span>
+      </div>
+      <div class="blog-hero-stat__sep"></div>
+      <div class="blog-hero-stat">
+        <strong>2026</strong>
+        <span>Uppdaterad</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- CATEGORY FILTERS -->
+<div class="blog-filters-bar">
+  <div class="container">
+    <div class="blog-filters" role="list" aria-label="Filtrera efter kategori">
+      <button class="blog-filter blog-filter--active" data-filter="alla"       role="listitem">Alla</button>
+      <button class="blog-filter"                     data-filter="guide"      role="listitem">Guider</button>
+      <button class="blog-filter"                     data-filter="jamforelse" role="listitem">Jämförelser</button>
+      <button class="blog-filter"                     data-filter="stad"       role="listitem">Stadsguider</button>
+      <button class="blog-filter"                     data-filter="sport"      role="listitem">Sport</button>
+    </div>
+  </div>
+</div>
+
+
+<!-- BLOG GRID -->
+<section class="blog-section" aria-labelledby="blog-grid-heading">
+  <div class="container">
+    <h2 class="sr-only" id="blog-grid-heading">Senaste artiklarna</h2>
+
+    <div class="blog-grid" id="blogGrid">
+
+      <!-- Card 1 — FEATURED: Best IPTV Sweden 2026 -->
+      <article class="blog-card blog-card--featured" data-category="guide">
+        <a href="blog/basta-iptv-sverige-2026.html" class="blog-card__img-link" tabindex="-1" aria-hidden="true">
+          <img
+            src="https://images.unsplash.com/photo-1649194271438-dcd53ee4cce3?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Bästa IPTV-tjänsten i Sverige 2026 som streamar i 4K på en Smart-TV"
+            width="900" height="540" loading="eager"
+          />
+          <span class="blog-card__badge">Recension</span>
+        </a>
+        <div class="blog-card__body">
+          <div class="blog-card__meta">
+            <span class="post-category">Recension</span>
+            <time datetime="2026-04-20">20 apr 2026</time>
+            <span class="blog-card__read-time">6 min läsning</span>
+          </div>
+          <h2 class="blog-card__title blog-card__title--featured">
+            <a href="blog/basta-iptv-sverige-2026.html" title="Bästa IPTV Sverige 2026 – Topptjänsten granskad">
+              Bästa IPTV Sverige 2026: Topptjänsten granskad
+            </a>
+          </h2>
+          <p class="blog-card__excerpt">
+            Vi har granskat alla stora IPTV-tjänster i Sverige för 2026 – kanalutbud, 4K-bildkvalitet,
+            svensk sporttäckning, enhetsstöd och priser i SEK. Här är den kompletta, ärliga
+            genomgången för svenska hushåll.
+          </p>
+          <a href="blog/basta-iptv-sverige-2026.html" class="btn btn-outline-blue blog-card__featured-btn" title="Läs hela recensionen av den bästa IPTV-tjänsten i Sverige 2026">
+            Läs artikeln
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Card 2 — NHL on IPTV -->
+      <article class="blog-card" data-category="sport">
+        <a href="blog/titta-pa-nhl-via-iptv-sverige.html" class="blog-card__img-link" title="Så tittar du på NHL via IPTV i Sverige">
+          <img
+            src="https://images.unsplash.com/photo-1584905066893-7d5c142ba4e1?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Titta på NHL-ishockey via IPTV i Sverige"
+            width="600" height="340" loading="lazy"
+          />
+          <span class="blog-card__badge">Sport</span>
+        </a>
+        <div class="blog-card__body">
+          <div class="blog-card__meta">
+            <span class="post-category">Sport</span>
+            <time datetime="2026-04-15">15 apr 2026</time>
+            <span class="blog-card__read-time">5 min läsning</span>
+          </div>
+          <h3 class="blog-card__title">
+            <a href="blog/titta-pa-nhl-via-iptv-sverige.html" title="Så tittar du på NHL via IPTV i Sverige 2026">
+              Så tittar du på NHL via IPTV i Sverige (2026)
+            </a>
+          </h3>
+          <p class="blog-card__excerpt">
+            Följ alla svenska NHL-stjärnor, SHL-matcher och Champions Hockey League i HD och 4K —
+            här är den kompletta guiden till att streama ishockey via IPTV i Sverige.
+          </p>
+          <a href="blog/titta-pa-nhl-via-iptv-sverige.html" class="blog-card__read-more" title="Läs guiden om NHL via IPTV">
+            Läs mer<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Card 3 — IPTV vs Cable -->
+      <article class="blog-card" data-category="jamforelse">
+        <a href="blog/iptv-vs-kabel-tv-sverige.html" class="blog-card__img-link" title="IPTV vs kabel-tv i Sverige">
+          <img
+            src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=600&q=80"
+            alt="Jämförelse mellan IPTV och kabel-tv i Sverige"
+            width="600" height="340" loading="lazy"
+          />
+          <span class="blog-card__badge blog-card__badge--compare">Jämförelse</span>
+        </a>
+        <div class="blog-card__body">
+          <div class="blog-card__meta">
+            <span class="post-category post-category--compare">Jämförelse</span>
+            <time datetime="2026-04-10">10 apr 2026</time>
+            <span class="blog-card__read-time">5 min läsning</span>
+          </div>
+          <h3 class="blog-card__title">
+            <a href="blog/iptv-vs-kabel-tv-sverige.html" title="IPTV vs kabel-tv i Sverige: Vad sparar du mest?">
+              IPTV vs kabel-tv i Sverige: Vad sparar du mest?
+            </a>
+          </h3>
+          <p class="blog-card__excerpt">
+            Vi jämförde Telia, Telenor, Tele2 och Com Hems kabel-tv-priser med IPTV. Se exakt hur
+            mycket du sparar — över 10 000 kr om året för de flesta svenska hushåll.
+          </p>
+          <a href="blog/iptv-vs-kabel-tv-sverige.html" class="blog-card__read-more" title="Läs jämförelsen mellan IPTV och kabel-tv">
+            Läs mer<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Card 4 — Best IPTV for Firestick -->
+      <article class="blog-card" data-category="guide">
+        <a href="blog/basta-iptv-for-firestick.html" class="blog-card__img-link" title="Bästa IPTV för Amazon Firestick i Sverige">
+          <img
+            src="https://images.unsplash.com/photo-1643208589888-23447d7e747f?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Bästa IPTV för Amazon Firestick i Sverige"
+            width="600" height="340" loading="lazy"
+          />
+          <span class="blog-card__badge">Guide</span>
+        </a>
+        <div class="blog-card__body">
+          <div class="blog-card__meta">
+            <span class="post-category">Guide</span>
+            <time datetime="2026-04-05">5 apr 2026</time>
+            <span class="blog-card__read-time">5 min läsning</span>
+          </div>
+          <h3 class="blog-card__title">
+            <a href="blog/basta-iptv-for-firestick.html" title="Bästa IPTV för Amazon Firestick i Sverige 2026">
+              Bästa IPTV för Amazon Firestick i Sverige
+            </a>
+          </h3>
+          <p class="blog-card__excerpt">
+            De bästa IPTV-apparna för Firestick, en steg-för-steg-installation, vilken
+            Firestick-modell du bör köpa, och hur du åtgärdar buffring — allt för 2026.
+          </p>
+          <a href="blog/basta-iptv-for-firestick.html" class="blog-card__read-more" title="Läs guiden om IPTV på Firestick">
+            Läs mer<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Card 5 — Install IPTV on Smart TV -->
+      <article class="blog-card" data-category="guide">
+        <a href="blog/installera-iptv-pa-smart-tv.html" class="blog-card__img-link" title="Så installerar du IPTV på din Smart-TV">
+          <img
+            src="https://images.unsplash.com/photo-1646861039459-fd9e3aabf3fb?q=80&w=1926&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Installera IPTV på en Samsung-, LG- eller Sony Smart-TV i Sverige"
+            width="600" height="340" loading="lazy"
+          />
+          <span class="blog-card__badge">Guide</span>
+        </a>
+        <div class="blog-card__body">
+          <div class="blog-card__meta">
+            <span class="post-category">Guide</span>
+            <time datetime="2026-04-01">1 apr 2026</time>
+            <span class="blog-card__read-time">6 min läsning</span>
+          </div>
+          <h3 class="blog-card__title">
+            <a href="blog/installera-iptv-pa-smart-tv.html" title="Så installerar du IPTV på din Smart-TV">
+              Så installerar du IPTV på din Smart-TV
+            </a>
+          </h3>
+          <p class="blog-card__excerpt">
+            Steg-för-steg-installation för Samsung (Tizen), LG (webOS) och Sony Bravia (Google TV) —
+            ingen Firestick behövs. Streama 20 000+ kanaler direkt på din TV.
+          </p>
+          <a href="blog/installera-iptv-pa-smart-tv.html" class="blog-card__read-more" title="Läs guiden om installation på Smart-TV">
+            Läs mer<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Card 6 — Best 4K IPTV Channels -->
+      <article class="blog-card" data-category="guide">
+        <a href="blog/basta-4k-iptv-kanalerna-sverige.html" class="blog-card__img-link" title="Bästa 4K IPTV-kanalerna i Sverige">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1779400027689-3988ccc571ee?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Bästa 4K Ultra HD IPTV-kanalerna i Sverige"
+            width="600" height="340" loading="lazy"
+          />
+          <span class="blog-card__badge">Guide</span>
+        </a>
+        <div class="blog-card__body">
+          <div class="blog-card__meta">
+            <span class="post-category">4K-streaming</span>
+            <time datetime="2026-03-05">5 mar 2026</time>
+            <span class="blog-card__read-time">7 min läsning</span>
+          </div>
+          <h3 class="blog-card__title">
+            <a href="blog/basta-4k-iptv-kanalerna-sverige.html" title="Bästa 4K IPTV-kanalerna i Sverige 2026">
+              Bästa 4K IPTV-kanalerna i Sverige 2026
+            </a>
+          </h3>
+          <p class="blog-card__excerpt">
+            Alla stora 4K Ultra HD-kanaler — Viaplay, TV4, SVT, C More — plus vilken
+            internethastighet och vilka enheter du behöver för perfekt 4K-streaming.
+          </p>
+          <a href="blog/basta-4k-iptv-kanalerna-sverige.html" class="blog-card__read-more" title="Läs guiden om bästa 4K IPTV-kanalerna">
+            Läs mer<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Card 7 — IPTV Stockholm -->
+      <article class="blog-card" data-category="stad">
+        <a href="blog/iptv-stockholm-guide.html" class="blog-card__img-link" title="Bästa IPTV-tjänsten i Stockholm">
+          <img
+            src="https://images.unsplash.com/photo-1517935706615-2717063c2225?q=80&w=600&auto=format&fit=crop"
+            alt="Bästa IPTV-tjänsten i Stockholm"
+            width="600" height="340" loading="lazy"
+          />
+          <span class="blog-card__badge">Stadsguide</span>
+        </a>
+        <div class="blog-card__body">
+          <div class="blog-card__meta">
+            <span class="post-category">Stadsguide</span>
+            <time datetime="2026-03-25">25 mar 2026</time>
+            <span class="blog-card__read-time">5 min läsning</span>
+          </div>
+          <h3 class="blog-card__title">
+            <a href="blog/iptv-stockholm-guide.html" title="Bästa IPTV-tjänsten i Stockholm — Komplett guide 2026">
+              Bästa IPTV-tjänsten i Stockholm (2026)
+            </a>
+          </h3>
+          <p class="blog-card__excerpt">
+            Se Djurgården och AIK på SHL-sändningar, plus varje lokal Stockholmskanal —
+            den kompletta guiden för att klippa sladden i huvudstaden.
+          </p>
+          <a href="blog/iptv-stockholm-guide.html" class="blog-card__read-more" title="Läs guiden om IPTV i Stockholm">
+            Läs mer<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Card 8 — IPTV Göteborg -->
+      <article class="blog-card" data-category="stad">
+        <a href="blog/iptv-goteborg-guide.html" class="blog-card__img-link" title="IPTV Göteborg: Bästa tjänsten för Frölunda-fans">
+          <img
+            src="https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?w=600&q=80"
+            alt="Bästa IPTV-tjänsten i Göteborg för Frölunda-fans"
+            width="600" height="340" loading="lazy"
+          />
+          <span class="blog-card__badge">Stadsguide</span>
+        </a>
+        <div class="blog-card__body">
+          <div class="blog-card__meta">
+            <span class="post-category">Stadsguide</span>
+            <time datetime="2026-03-20">20 mar 2026</time>
+            <span class="blog-card__read-time">5 min läsning</span>
+          </div>
+          <h3 class="blog-card__title">
+            <a href="blog/iptv-goteborg-guide.html" title="IPTV Göteborg: Bästa tjänsten för Frölunda-fans 2026">
+              IPTV Göteborg: Bästa tjänsten för Frölunda-fans
+            </a>
+          </h3>
+          <p class="blog-card__excerpt">
+            Se Frölunda HC i 4K på SHL-sändningar, plus det mest kompletta kanalutbudet
+            för Göteborgs sportintresserade hushåll.
+          </p>
+          <a href="blog/iptv-goteborg-guide.html" class="blog-card__read-more" title="Läs guiden om IPTV i Göteborg">
+            Läs mer<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Card 9 — IPTV Malmö -->
+      <article class="blog-card" data-category="stad">
+        <a href="blog/iptv-malmo-guide.html" class="blog-card__img-link" title="IPTV Malmö: Bästa tjänsten för Malmö FF-fans">
+          <img
+            src="https://images.unsplash.com/photo-1560814304-4f05b62af116?w=600&q=80&auto=format&fit=crop"
+            alt="Bästa IPTV-tjänsten i Malmö för Malmö FF-fans"
+            width="600" height="340" loading="lazy"
+          />
+          <span class="blog-card__badge">Stadsguide</span>
+        </a>
+        <div class="blog-card__body">
+          <div class="blog-card__meta">
+            <span class="post-category">Stadsguide</span>
+            <time datetime="2026-03-15">15 mar 2026</time>
+            <span class="blog-card__read-time">5 min läsning</span>
+          </div>
+          <h3 class="blog-card__title">
+            <a href="blog/iptv-malmo-guide.html" title="IPTV Malmö: Bästa tjänsten för Malmö FF-fans 2026">
+              IPTV Malmö: Bästa tjänsten för Malmö FF-fans
+            </a>
+          </h3>
+          <p class="blog-card__excerpt">
+            Varje Malmö FF-match, Malmö Redhawks-ishockey, plus Malmös stora
+            mångkulturella kanalutbud.
+          </p>
+          <a href="blog/iptv-malmo-guide.html" class="blog-card__read-more" title="Läs guiden om IPTV i Malmö">
+            Läs mer<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Card 10 — Is IPTV Legal in Sweden -->
+      <article class="blog-card" data-category="guide">
+        <a href="blog/ar-iptv-lagligt-i-sverige.html" class="blog-card__img-link" title="Är IPTV lagligt i Sverige?">
+          <img
+            src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=600&auto=format&fit=crop"
+            alt="Är IPTV lagligt i Sverige — regler 2026"
+            width="600" height="340" loading="lazy"
+          />
+          <span class="blog-card__badge">Guide</span>
+        </a>
+        <div class="blog-card__body">
+          <div class="blog-card__meta">
+            <span class="post-category">Juridik</span>
+            <time datetime="2026-03-10">10 mar 2026</time>
+            <span class="blog-card__read-time">6 min läsning</span>
+          </div>
+          <h3 class="blog-card__title">
+            <a href="blog/ar-iptv-lagligt-i-sverige.html" title="Är IPTV lagligt i Sverige? Uppdaterat 2026">
+              Är IPTV lagligt i Sverige? (Uppdaterat 2026)
+            </a>
+          </h3>
+          <p class="blog-card__excerpt">
+            Vi förklarar PTS regler, upphovsrättslagen och skillnaden mellan laglig och
+            piratkopierad IPTV — samt hur du väljer en legitim tjänst som håller dig skyddad.
+          </p>
+          <a href="blog/ar-iptv-lagligt-i-sverige.html" class="blog-card__read-more" title="Läs om IPTV:s laglighet i Sverige">
+            Läs mer<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+    </div><!-- /blog-grid -->
+
+    <p class="blog-no-results" id="noResults" hidden>Inga artiklar hittades i denna kategori.</p>
+
+  </div>
+</section>
+
+
+<!-- CTA BANNER -->
+<section class="blog-cta-strip">
+  <div class="container blog-cta-strip__inner">
+    <div>
+      <p class="section-eyebrow" style="color:#93c5fd;">Redo att prova?</p>
+      <h2>Prova IPTV Nordic gratis i 24 timmar</h2>
+      <p>Inga kortuppgifter. Inget åtagande. Aktiveras inom 5 minuter.</p>
+      <p>Behöver du hjälp med din enhet? Kontakta vår support för en professionell konsultation via WhatsApp: +1 786 735 2904</p>
+    </div>
+    <a
+      href="https://wa.me/17867352904?text=Hej!%20Jag%20vill%20ha%20ett%20gratis%2024-timmarstest."
+      class="btn btn-wa btn-lg"
+      target="_blank" rel="noopener noreferrer"
+      title="Starta ditt gratis IPTV-test via WhatsApp"
+    >💬 Starta gratis test nu</a>
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="footer" id="contact">
+  <div class="container footer__inner">
+
+    <div class="footer__brand">
+      <a href="/" class="logo logo--light" title="IPTV Nordic – Bästa IPTV Sverige">
+        <svg class="logo__svg" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="28" height="28" rx="7" fill="#1d4ed8"/>
+          <rect x="4" y="7" width="20" height="12" rx="2" fill="white"/>
+          <rect x="10" y="21" width="8" height="2" rx="1" fill="white"/>
+          <circle cx="22" cy="9" r="2.5" fill="#25d366"/>
+          <rect x="7" y="10" width="5" height="3.5" rx=".75" fill="#1d4ed8"/>
+          <rect x="14" y="10" width="7" height="1.5" rx=".75" fill="#bfdbfe"/>
+          <rect x="14" y="12.5" width="5" height="1.5" rx=".75" fill="#bfdbfe"/>
+        </svg>
+        IPTV <strong>Nordic</strong>
+      </a>
+      <p>Sveriges bästa IPTV-tjänst med<br>25 000+ kanaler i 4K-kvalitet.</p>
+    </div>
+
+    <nav aria-label="Snabblänkar">
+      <h4>Snabblänkar</h4>
+      <a href="/" title="Hem – IPTV Nordic">Hem</a>
+      <a href="/#pricing" title="Se våra IPTV-priser">Priser</a>
+      <a href="/#faq" title="Vanliga frågor om IPTV">FAQ</a>
+      <a href="blog.html" title="IPTV-blogg och guider">Blogg</a>
+    </nav>
+
+    <div class="footer__col">
+      <h4>Support</h4>
+      <a href="https://wa.me/17867352904?text=Hej!%20Jag%20vill%20ha%20ett%20gratis%2024-timmarstest." target="_blank" rel="noopener noreferrer" title="Kontakta oss på WhatsApp">💬 WhatsApp</a>
+      <a href="contact.html" title="Kontaktsida">Kontakta oss</a>
+      <a href="mailto:info@iptvnordica.se" title="E-posta IPTV Nordic">info@iptvnordica.se</a>
+    </div>
+
+    <div class="footer__col">
+      <h4>Juridik</h4>
+      <a href="terms.html" title="Användarvillkor för IPTV Nordic">Användarvillkor</a>
+      <a href="privacy.html" title="Integritetspolicy för IPTV Nordic">Integritetspolicy</a>
+    </div>
+
+  </div>
+
+  <div class="footer__bottom">
+    <div class="container footer__bottom-inner">
+      <p>© 2026 IPTV Nordic. Alla rättigheter förbehållna.</p>
+      <p class="footer__seo">Bästa IPTV Sverige – Streama i 4K</p>
+    </div>
+  </div>
+</footer>
+
+
+<!-- Floating WhatsApp button -->
+<a
+  href="https://wa.me/17867352904?text=Hej!%20Jag%20vill%20ha%20ett%20gratis%2024-timmarstest."
+  class="wa-float"
+  target="_blank" rel="noopener noreferrer"
+  aria-label="WhatsApp-support"
+  title="Kontakta oss på WhatsApp"
+>
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.534 5.86L0 24l6.335-1.51A11.955 11.955 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.028-1.38l-.36-.214-3.762.897.934-3.668-.235-.376A9.808 9.808 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182c5.43 0 9.818 4.388 9.818 9.818 0 5.43-4.388 9.818-9.818 9.818z"/></svg>
+</a>
+
+
+<script>
+  // Mobile menu
+  const menuBtn    = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  menuBtn.addEventListener('click', () => {
+    const isOpen = mobileMenu.classList.toggle('open');
+    menuBtn.classList.toggle('open', isOpen);
+    menuBtn.setAttribute('aria-expanded', String(isOpen));
+    mobileMenu.setAttribute('aria-hidden', String(!isOpen));
+  });
+  mobileMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.remove('open');
+      menuBtn.classList.remove('open');
+      menuBtn.setAttribute('aria-expanded', 'false');
+      mobileMenu.setAttribute('aria-hidden', 'true');
+    });
+  });
+
+  // Category filter with smooth fade transitions
+  const filters  = document.querySelectorAll('.blog-filter');
+  const cards    = document.querySelectorAll('.blog-card');
+  const noResult = document.getElementById('noResults');
+
+  // Inject animation styles once
+  const filterStyle = document.createElement('style');
+  filterStyle.textContent = `
+    .blog-card { transition: opacity 0.25s ease, transform 0.25s ease; }
+    .blog-card.card-hiding { opacity: 0; transform: scale(0.97); pointer-events: none; }
+    .blog-card.card-showing { animation: cardIn 0.28s ease forwards; }
+    @keyframes cardIn { from { opacity: 0; transform: translateY(10px) scale(0.97); } to { opacity: 1; transform: translateY(0) scale(1); } }
+  `;
+  document.head.appendChild(filterStyle);
+
+  filters.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filters.forEach(f => f.classList.remove('blog-filter--active'));
+      btn.classList.add('blog-filter--active');
+
+      const filter = btn.dataset.filter;
+
+      // First pass: fade out non-matching visible cards
+      cards.forEach(card => {
+        const match = filter === 'alla' || card.dataset.category === filter;
+        if (!match && !card.hidden) {
+          card.classList.add('card-hiding');
+          setTimeout(() => {
+            card.hidden = true;
+            card.classList.remove('card-hiding');
+          }, 250);
+        }
+      });
+
+      // Second pass: fade in matching cards after short delay
+      let visible = 0;
+      setTimeout(() => {
+        cards.forEach(card => {
+          const match = filter === 'alla' || card.dataset.category === filter;
+          if (match) {
+            card.hidden = false;
+            card.classList.remove('card-hiding');
+            card.classList.add('card-showing');
+            setTimeout(() => card.classList.remove('card-showing'), 300);
+            visible++;
+          }
+        });
+        noResult.hidden = visible > 0;
+      }, 200);
+    });
+  });
+</script>
+
+</body>
+</html>
