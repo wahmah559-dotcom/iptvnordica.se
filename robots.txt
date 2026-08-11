@@ -4,7 +4,7 @@ Disallow: /admin/
 Disallow: /config/
 Disallow: /temp/
 
-# IPTV Nordic — Svensk IPTV-tjänst
-# Target: bästa IPTV Sverige, IPTV Sverige 2026, svensk IPTV, 4K IPTV Sverige
+# Keywords optimization for Swedish market
+# Target: bästa iptv flashback, SwedishIPTV, SveaStream
 
 Sitemap: https://iptvnordica.se/sitemap.xml
