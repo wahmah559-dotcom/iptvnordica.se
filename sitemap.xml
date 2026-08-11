@@ -28,22 +28,6 @@
     <priority>0.6</priority>
   </url>
 
-  <!-- Integritetspolicy -->
-  <url>
-    <loc>https://iptvnordica.se/privacy.html</loc>
-    <lastmod>2026-04-20</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <!-- Användarvillkor -->
-  <url>
-    <loc>https://iptvnordica.se/terms.html</loc>
-    <lastmod>2026-04-20</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
- 
  <url>
   <loc>https://iptvnordica.se/pricing.html</loc>
   <lastmod>2026-04-24</lastmod>
